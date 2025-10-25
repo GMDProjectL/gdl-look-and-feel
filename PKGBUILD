@@ -19,8 +19,12 @@ package() {
     cd "$srcdir/$pkgname"
 
     local DEFAULT_XDG_DIST="${pkgdir}/etc/xdg"
+    local SDDM_CD_DIST="${pkgdir}/etc/sddm.conf.d"
 
     mkdir -p "${DEFAULT_XDG_DIST}"
+    mkdir -p "${SDDM_CD_DIST}"
 
     install -Dm755 etc/xdg/kdeglobals "${DEFAULT_XDG_DIST}/kdeglobals"
+    install -Dm755 etc/sddm.conf.d/10-wayland.conf "${SDDM_CD_DIST}/10-wayland.conf"
+    install -Dm755 etc/sddm.conf.d/kde_settings.conf "${SDDM_CD_DIST}/kde_settings.conf"
 }
