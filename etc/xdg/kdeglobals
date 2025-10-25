@@ -6,3 +6,6 @@ toolBarFont=Adwaita Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 fixed=Adwaita Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 XftHintStyle=hintslight
 XftSubPixel=none
+
+[WM]
+activeFont=Adwaita Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
