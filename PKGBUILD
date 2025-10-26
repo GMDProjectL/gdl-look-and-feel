@@ -1,6 +1,6 @@
 pkgname=gdl-look-and-feel
 pkgver=1.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Set of default settings for Project GDL"
 arch=('any')
 url="https://github.com/GMDProjectL/gdl-look-and-feel"
@@ -27,6 +27,7 @@ package() {
     mkdir -p "${MENUS_DIST}"
 
     install -Dm755 etc/xdg/kdeglobals "${DEFAULT_XDG_DIST}/kdeglobals"
+    install -Dm755 etc/xdg/kwalletrc "${DEFAULT_XDG_DIST}/kwalletrc"
     install -Dm755 etc/sddm.conf.d/10-wayland.conf "${SDDM_CD_DIST}/10-wayland.conf"
     install -Dm755 etc/sddm.conf.d/kde_settings.conf "${SDDM_CD_DIST}/kde_settings.conf"
 
